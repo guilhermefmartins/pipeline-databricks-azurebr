@@ -73,4 +73,4 @@ dbutils.fs.mount(
 - ✅ O projeto demonstrou a integração eficaz entre Databricks e os serviços do Azure, com organização modular e escalável<br/>
  <br/>
 
-** 🔍 Este projeto comprova minha capacidade de desenvolver pipelines completos e escaláveis em nuvem, combinando engenharia de dados moderna, automação e boas práticas de orquestração com ferramentas do ecossistema Azure. **
+*🔍 Este projeto comprova minha capacidade de desenvolver pipelines completos e escaláveis em nuvem, combinando engenharia de dados moderna, automação e boas práticas de orquestração com ferramentas do ecossistema Azure.*
