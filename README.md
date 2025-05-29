@@ -64,10 +64,12 @@ dbutils.fs.mount(
   extraConfigs = configs)
 ```
 <br/>
-#📈 Resultados e Conclusões <br/>
+# 📈 Resultados e Conclusões
+ <br/>
 - ✅ Os dados foram processados com sucesso em um fluxo robusto e automatizado<br/>
 - ✅ O uso do formato Delta permitiu maior controle, performance e confiabilidade nas camadas bronze e silver<br/>
 - ✅ O Azure Data Factory ofereceu uma interface visual amigável para orquestração, facilitando o agendamento e rastreamento das execuções<br/>
 - ✅ O projeto demonstrou a integração eficaz entre Databricks e os serviços do Azure, com organização modular e escalável<br/>
+ <br/>
 
- 🔍 Este projeto comprova minha capacidade de desenvolver pipelines completos e escaláveis em nuvem, combinando engenharia de dados moderna, automação e boas práticas de orquestração com ferramentas do ecossistema Azure.
+# 🔍 Este projeto comprova minha capacidade de desenvolver pipelines completos e escaláveis em nuvem, combinando engenharia de dados moderna, automação e boas práticas de orquestração com ferramentas do ecossistema Azure.
