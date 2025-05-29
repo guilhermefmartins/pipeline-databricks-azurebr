@@ -2,7 +2,7 @@
 Objetivo
 Automatizar a execução de notebooks no Azure Databricks utilizando o Azure Data Factory, com foco em pipelines de dados de imóveis organizados nas camadas bronze e silver de um Data Lake na Azure, usando o formato de armazenamento Delta para garantir performance, escalabilidade e versionamento.
 
-## 📌 Sumário ##
+# 📌 Sumário 
 Contexto
 
 Pipeline de Dados
@@ -18,7 +18,7 @@ Resultados e Conclusões
 Contexto
 O projeto teve como foco principal a construção de um pipeline de dados moderno e automatizado, com leitura, transformação e persistência em Delta Lake, utilizando ferramentas de ponta do ecossistema Azure. Os dados simulam o mercado imobiliário e passam por diferentes camadas de tratamento com persistência eficiente.
 
-## 🏗 Pipeline de Dados ##
+# 🏗 Pipeline de Dados 
 Camadas estruturadas no Data Lake:
 
 Bronze: Ingestão bruta dos dados originais.
@@ -35,7 +35,7 @@ Enriquecimento com variáveis como faixa de preço, localização, tipo de imóv
 
 Escrita dos dados tratados no formato Delta, garantindo versionamento, transações ACID e performance superior para leitura e atualização
 
-🛠 *Ferramentas Utilizadas*
+# 🛠 Ferramentas Utilizadas
 Azure Databricks: Ambiente baseado em Apache Spark com notebooks em PySpark e Scala, usado para ingestão, tratamento e gravação dos dados.
 
 Delta Lake: Formato de armazenamento transacional utilizado para garantir consistência e eficiência nas camadas do Data Lake.
@@ -44,10 +44,10 @@ Azure Data Factory (ADF): Interface visual de orquestração para pipelines, con
 
 Azure Data Lake Storage Gen2: Armazenamento escalável e seguro para os dados, com suporte a hierarquia de diretórios e permissões.
 
-🔄 *Orquestração*
+# 🔄 Orquestração
 A orquestração foi feita com o Azure Data Factory, utilizando pipelines visuais com agendamentos e monitoramento. As execuções foram programadas com triggers baseadas em horário e configuradas para rodar notebooks específicos no Databricks. ADF gerenciou dependências, falhas e logs, garantindo rastreabilidade e controle no processo.
 
-## 💻 Como Reproduzir ##
+# 💻 Como Reproduzir
 Provisionar os serviços:
 
 Azure Databricks
@@ -59,7 +59,7 @@ Azure Data Lake Storage Gen2
 Montar o Data Lake no Databricks:
 
 
-configs = {
+__configs = {
   "fs.azure.account.auth.type": "OAuth",
   "fs.azure.account.oauth.provider.type": "org.apache.hadoop.fs.azurebfs.oauth2.ClientCredsTokenProvider",
   "fs.azure.account.oauth2.client.id": "<application-id>",
@@ -71,7 +71,7 @@ dbutils.fs.mount(
   source = "abfss://<container>@<storage>.dfs.core.windows.net/",
   mountPoint = "/mnt/<nome>",
   extraConfigs = configs
-)
+)__
 
 
 
