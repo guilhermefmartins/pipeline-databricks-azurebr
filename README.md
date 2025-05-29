@@ -2,18 +2,13 @@
 Objetivo
 Automatizar a execução de notebooks no Azure Databricks utilizando o Azure Data Factory, com foco em pipelines de dados de imóveis organizados nas camadas bronze e silver de um Data Lake na Azure, usando o formato de armazenamento Delta para garantir performance, escalabilidade e versionamento.
 
-# 📌 Sumário 
-Contexto
-
-Pipeline de Dados
-
-Ferramentas Utilizadas
-
-Orquestração
-
-Como Reproduzir
-
-Resultados e Conclusões
+# 📌 Sumário
+- [Contexto](#contexto)
+- [Pipeline de Dados](#pipeline-de-dados)
+- [Ferramentas Utilizadas](#ferramentas-utilizadas)
+- [Orquestração](#orquestração)
+- [Como Reproduzir](#como-reproduzir)
+- [Resultados e Conclusões](#resultados-e-conclusões)
 
 Contexto
 O projeto teve como foco principal a construção de um pipeline de dados moderno e automatizado, com leitura, transformação e persistência em Delta Lake, utilizando ferramentas de ponta do ecossistema Azure. Os dados simulam o mercado imobiliário e passam por diferentes camadas de tratamento com persistência eficiente.
@@ -58,8 +53,8 @@ Azure Data Lake Storage Gen2
 
 Montar o Data Lake no Databricks:
 
-
-* *configs = {
+_
+configs = {
   "fs.azure.account.auth.type": "OAuth",
   "fs.azure.account.oauth.provider.type": "org.apache.hadoop.fs.azurebfs.oauth2.ClientCredsTokenProvider",
   "fs.azure.account.oauth2.client.id": "<application-id>",
@@ -71,7 +66,8 @@ dbutils.fs.mount(
   source = "abfss://<container>@<storage>.dfs.core.windows.net/",
   mountPoint = "/mnt/<nome>",
   extraConfigs = configs
-)* *
+)
+_
 
 
 
