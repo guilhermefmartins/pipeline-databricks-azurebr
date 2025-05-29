@@ -72,14 +72,6 @@ dbutils.fs.mount(
 <br/>
 
 
-
-*Criar pipeline visual no Azure Data Factory:*
-
-Adicionar atividade de execução de notebook
-
-Configurar trigger e fluxo sequencial para bronze → silver
-
-
 📈 Resultados e Conclusões
 ✅ Os dados foram processados com sucesso em um fluxo robusto e automatizado
 ✅ O uso do formato Delta permitiu maior controle, performance e confiabilidade nas camadas bronze e silver
