@@ -64,7 +64,7 @@ dbutils.fs.mount(
   extraConfigs = configs)
 ```
 <br/>
-# 📈 Resultados e Conclusões
+# 📈 Resultados e Conclusões <br/>
 ✅ Os dados foram processados com sucesso em um fluxo robusto e automatizado<br/>
 ✅ O uso do formato Delta permitiu maior controle, performance e confiabilidade nas camadas bronze e silver<br/>
 ✅ O Azure Data Factory ofereceu uma interface visual amigável para orquestração, facilitando o agendamento e rastreamento das execuções<br/>
