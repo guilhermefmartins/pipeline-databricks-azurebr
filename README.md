@@ -22,11 +22,9 @@ Silver: Dados tratados, limpos e prontos para análise e consumo por dashboards 
 
 Transformações aplicadas:
 
-Leitura de arquivos originais em CSV/Parquet
+Leitura de arquivos originais em JSON
 
 Padronização de nomes e tipos de colunas
-
-Enriquecimento com variáveis como faixa de preço, localização, tipo de imóvel e categorização de áreas
 
 Escrita dos dados tratados no formato Delta, garantindo versionamento, transações ACID e performance superior para leitura e atualização
 
