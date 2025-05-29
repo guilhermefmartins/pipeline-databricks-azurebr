@@ -50,8 +50,11 @@ Azure Databricks
 Azure Data Factory
 
 Azure Data Lake Storage Gen2
+\
+\
+\
 
-Montar o Data Lake no Databricks:
+# Montar o Data Lake no Databricks:
 
 _
 configs = {
@@ -69,7 +72,9 @@ dbutils.fs.mount(
 )
 _
 
-
+\
+\
+\
 
 
 *Criar pipeline visual no Azure Data Factory:*
