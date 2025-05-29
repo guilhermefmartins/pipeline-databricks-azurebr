@@ -56,8 +56,7 @@ Azure Data Lake Storage Gen2
 <br/>
 
 # Montar o Data Lake no Databricks:
-
-_
+```
 configs = {
   "fs.azure.account.auth.type": "OAuth",
   "fs.azure.account.oauth.provider.type": "org.apache.hadoop.fs.azurebfs.oauth2.ClientCredsTokenProvider",
@@ -71,8 +70,7 @@ dbutils.fs.mount(
   mountPoint = "/mnt/<nome>",
   extraConfigs = configs
 )
-_
-
+```
 <br/>
 <br/>
 <br/>
