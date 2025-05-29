@@ -48,11 +48,7 @@ Azure Databricks
 Azure Data Factory
 
 Azure Data Lake Storage Gen2
-
 <br/>
-<br/>
-<br/>
-
 # Montar o Data Lake no Databricks:
 ```
 val configs = Map(
@@ -68,10 +64,6 @@ dbutils.fs.mount(
   extraConfigs = configs)
 ```
 <br/>
-<br/>
-<br/>
-
-
 📈 Resultados e Conclusões
 ✅ Os dados foram processados com sucesso em um fluxo robusto e automatizado
 ✅ O uso do formato Delta permitiu maior controle, performance e confiabilidade nas camadas bronze e silver
