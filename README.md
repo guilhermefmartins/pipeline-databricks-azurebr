@@ -57,19 +57,17 @@ Azure Data Lake Storage Gen2
 
 # Montar o Data Lake no Databricks:
 ```
-configs = {
-  "fs.azure.account.auth.type": "OAuth",
-  "fs.azure.account.oauth.provider.type": "org.apache.hadoop.fs.azurebfs.oauth2.ClientCredsTokenProvider",
-  "fs.azure.account.oauth2.client.id": "<application-id>",
-  "fs.azure.account.oauth2.client.secret": dbutils.secrets.get(scope="<scope-name>", key="<key-name>"),
-  "fs.azure.account.oauth2.client.endpoint": "https://login.microsoftonline.com/<tenant-id>/oauth2/token"
-}
-
+val configs = Map(
+  "fs.azure.account.auth.type" -> "OAuth",
+  "fs.azure.account.oauth.provider.type" -> "org.apache.hadoop.fs.azurebfs.oauth2.ClientCredsTokenProvider",
+  "fs.azure.account.oauth2.client.id" -> "<application-id>",
+  "fs.azure.account.oauth2.client.secret" -> dbutils.secrets.get(scope="<scope-name>",key="<service-credential-key-name>"),
+  "fs.azure.account.oauth2.client.endpoint" -> "https://login.microsoftonline.com/<directory-id>/oauth2/token")
+// Optionally, you can add <directory-name> to the source URI of your mount point.
 dbutils.fs.mount(
-  source = "abfss://<container>@<storage>.dfs.core.windows.net/",
-  mountPoint = "/mnt/<nome>",
-  extraConfigs = configs
-)
+  source = "abfss://<container-name>@<storage-account-name>.dfs.core.windows.net/",
+  mountPoint = "/mnt/<mount-name>",
+  extraConfigs = configs)
 ```
 <br/>
 <br/>
