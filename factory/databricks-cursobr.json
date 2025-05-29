@@ -1,0 +1,9 @@
+{
+	"name": "databricks-cursobr",
+	"location": "brazilsouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "2ade2cd8-cc9b-46fd-ab84-7591010230df",
+		"tenantId": "bb33027c-85d2-45ed-8729-6c4069546ce3"
+	}
+}
